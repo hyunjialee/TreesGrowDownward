@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TreeTest {
@@ -5,10 +6,15 @@ public class TreeTest {
     public void givenABinaryTree_WhenAddingElements_ThenTreeContainsThoseElements() {
         TreeOneZero bt = new TreeOneZero();
 
-        assertTrue(bt.containsNode(6));
-        assertTrue(bt.containsNode(4));
+        bt.add(6);
+        bt.add(4);
+        bt.add(1);
 
-        assertFalse(bt.containsNode(1));
+
+        Assert.assertTrue(bt.containsNode(6));
+        Assert.assertTrue(bt.containsNode(4));
+
+        Assert.assertFalse(bt.containsNode(1));
     }
 
 }
