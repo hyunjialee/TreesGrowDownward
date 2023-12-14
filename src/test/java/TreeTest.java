@@ -17,4 +17,12 @@ public class TreeTest {
         Assert.assertFalse(bt.containsNode(1));
     }
 
+    @Test
+    public void givenABinaryTree_WhenDeletingElements_ThenTreeDoesNotContainThoseElements() {
+        TreeOneZero bt = new TreeOneZero();
+
+        Assert.assertTrue(bt.containsNode(9));
+        bt.deleteNode(9);
+        Assert.assertFalse(bt.containsNode(9));
+    }
 }

@@ -60,8 +60,28 @@ public class TreeOneZero {
             root = deleteRecursive(root, value);
     }
 
-
     //Traversing the Tree
     // - Depth First search, Breadth-First search,
+
+    public void traverseInOrder(Node node){
+        // if node is not null
+        //traverseInOrder(node.left)
+        //print(" " + node.value)
+        //traverseInOrder(node.right)
+    }
+    public void traversePreOrder(Node node){
+        //if (node != null)
+        //print(" " + node.value)
+        //traversePreOrder(node.left)
+        //traversePreOrder(node.right)
+    }
+
+    public void traversePostOrder(Node node){
+        //if (node != null)
+        //traversePostOrder(node.left)
+        //traversePostOrder(node.right)
+        //print(" " + node.value)
+
+    }
 
 }
